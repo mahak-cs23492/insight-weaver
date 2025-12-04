@@ -1,0 +1,33 @@
+Product,Category,Region,Month,Sales,Quantity,Profit
+Laptop,Electronics,North,Jan 2024,15000,30,4500
+Smartphone,Electronics,South,Jan 2024,12000,60,3600
+Desk Chair,Furniture,East,Jan 2024,8000,40,2400
+Monitor,Electronics,West,Jan 2024,9500,38,2850
+Bookshelf,Furniture,North,Jan 2024,3500,14,1050
+Laptop,Electronics,South,Feb 2024,18000,36,5400
+Smartphone,Electronics,East,Feb 2024,14000,70,4200
+Desk Chair,Furniture,West,Feb 2024,7500,30,2250
+Monitor,Electronics,North,Feb 2024,11000,44,3300
+Bookshelf,Furniture,South,Feb 2024,4200,17,1260
+Laptop,Electronics,East,Mar 2024,21000,42,6300
+Smartphone,Electronics,West,Mar 2024,16500,82,4950
+Desk Chair,Furniture,North,Mar 2024,9200,46,2760
+Monitor,Electronics,South,Mar 2024,12500,50,3750
+Bookshelf,Furniture,East,Mar 2024,5100,20,1530
+Laptop,Electronics,West,Apr 2024,19500,39,5850
+Smartphone,Electronics,North,Apr 2024,13500,67,4050
+Desk Chair,Furniture,South,Apr 2024,8800,44,2640
+Monitor,Electronics,East,Apr 2024,10800,43,3240
+Bookshelf,Furniture,West,Apr 2024,4800,19,1440
+Tablet,Electronics,North,Jan 2024,6500,32,1950
+Tablet,Electronics,South,Feb 2024,7200,36,2160
+Tablet,Electronics,East,Mar 2024,8100,40,2430
+Tablet,Electronics,West,Apr 2024,7800,39,2340
+Office Desk,Furniture,North,Jan 2024,12000,24,3600
+Office Desk,Furniture,South,Feb 2024,14500,29,4350
+Office Desk,Furniture,East,Mar 2024,16200,32,4860
+Office Desk,Furniture,West,Apr 2024,15000,30,4500
+Keyboard,Electronics,North,Feb 2024,2500,50,750
+Keyboard,Electronics,South,Mar 2024,2800,56,840
+Mouse,Electronics,East,Feb 2024,1800,90,540
+Mouse,Electronics,West,Mar 2024,2100,105,630
