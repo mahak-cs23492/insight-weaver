@@ -9,6 +9,7 @@ import {
 import { ChartCard } from './ChartCard';
 import { FilterSidebar } from './FilterSidebar';
 import { StatsCards } from './StatsCards';
+import { SaveDashboardDialog } from './SaveDashboardDialog';
 import { Download, RefreshCw } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { toast } from 'sonner';
@@ -17,9 +18,10 @@ interface DashboardProps {
   data: ParsedData;
   columns: ColumnSchema[];
   onReset: () => void;
+  readOnly?: boolean;
 }
 
-export function Dashboard({ data, columns, onReset }: DashboardProps) {
+export function Dashboard({ data, columns, onReset, readOnly = false }: DashboardProps) {
   const [filters, setFilters] = useState<Record<string, (string | number)[]>>({});
   const [chartConfigs, setChartConfigs] = useState<ChartConfig[]>(() =>
     generateChartConfigs({ ...data, columns })
@@ -101,10 +103,15 @@ export function Dashboard({ data, columns, onReset }: DashboardProps) {
               <Download className="w-4 h-4 mr-2" />
               Export Data
             </Button>
-            <Button variant="outline" onClick={onReset}>
-              <RefreshCw className="w-4 h-4 mr-2" />
-              New File
-            </Button>
+            {!readOnly && (
+              <>
+                <SaveDashboardDialog data={data} columns={columns} />
+                <Button variant="outline" onClick={onReset}>
+                  <RefreshCw className="w-4 h-4 mr-2" />
+                  New File
+                </Button>
+              </>
+            )}
           </div>
         </div>
 

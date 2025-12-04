@@ -14,7 +14,75 @@ export type Database = {
   }
   public: {
     Tables: {
-      [_ in never]: never
+      profiles: {
+        Row: {
+          avatar_url: string | null
+          created_at: string
+          display_name: string | null
+          id: string
+          updated_at: string
+          user_id: string
+        }
+        Insert: {
+          avatar_url?: string | null
+          created_at?: string
+          display_name?: string | null
+          id?: string
+          updated_at?: string
+          user_id: string
+        }
+        Update: {
+          avatar_url?: string | null
+          created_at?: string
+          display_name?: string | null
+          id?: string
+          updated_at?: string
+          user_id?: string
+        }
+        Relationships: []
+      }
+      saved_dashboards: {
+        Row: {
+          columns: Json
+          created_at: string
+          data: Json
+          file_name: string
+          id: string
+          is_public: boolean
+          name: string
+          row_count: number
+          share_id: string | null
+          updated_at: string
+          user_id: string
+        }
+        Insert: {
+          columns: Json
+          created_at?: string
+          data: Json
+          file_name: string
+          id?: string
+          is_public?: boolean
+          name: string
+          row_count: number
+          share_id?: string | null
+          updated_at?: string
+          user_id: string
+        }
+        Update: {
+          columns?: Json
+          created_at?: string
+          data?: Json
+          file_name?: string
+          id?: string
+          is_public?: boolean
+          name?: string
+          row_count?: number
+          share_id?: string | null
+          updated_at?: string
+          user_id?: string
+        }
+        Relationships: []
+      }
     }
     Views: {
       [_ in never]: never
